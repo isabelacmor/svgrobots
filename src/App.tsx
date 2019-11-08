@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Person } from "./components/person/Person";
+import { Robot, Expression } from "./components/robot/Robot";
 
 function App() {
   return (
@@ -12,16 +12,12 @@ function App() {
         flexWrap: "wrap"
       }}
     >
-      <Person />
-      {/* <Person hairColor={"#603404"} />
-      <Person hairColor={"#603404"} eyeColor={"#0182d3"} />
-      <Person
-        hairColor={"#603404"}
-        eyeColor={"#0182d3"}
-        shirtColor={"#B348E6"}
-      />
-      <Person expression={Expression.SAD} />
-      <Person expression={Expression.LOVE} /> */}
+      <Robot />
+
+      <Robot bodyColor={"#B6459D"} />
+      <Robot bodyColor={"#716d8a"} />
+      <Robot bodyColor={"#B6459D"} accentColor={"#3b035f"} />
+      <Robot expression={Expression.SAD} />
     </div>
   );
 }
